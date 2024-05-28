@@ -22,11 +22,11 @@ if [ "$KERNEL_VERSION" = "6.1.21-v8+" ]; then
 fi
 
 # Download and extract binaries
-if ! wget "https://github.com/nexmonster/nexmon_csi_bin/base/$KERNEL_VERSION.tar.xz"; then
-    echo "Pre-compiled binaries probably don't exist for your kernel's version: $KERNEL_VERSION."
-    echo "Please create a new Issue on Github and tell us which kernel you are using."
-    exit
-fi
+# if ! wget "https://github.com/nexmonster/nexmon_csi_bin/base/$KERNEL_VERSION.tar.xz"; then
+#     echo "Pre-compiled binaries probably don't exist for your kernel's version: $KERNEL_VERSION."
+#     echo "Please create a new Issue on Github and tell us which kernel you are using."
+#     exit
+# fi
 
 tar -xvJf "$KERNEL_VERSION.tar.xz" && cd "$KERNEL_VERSION"
 
